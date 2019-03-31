@@ -1,0 +1,40 @@
+<scheme name="DefaultDot" version="142" parent_scheme="Default">
+  <metaInfo>
+    <property name="created">2019-02-04T12:27:08</property>
+    <property name="ide">PyCharmCore</property>
+    <property name="ideVersion">2018.3.4.0.0</property>
+    <property name="modified">2019-02-04T12:27:35</property>
+    <property name="originalScheme">DefaultDot</property>
+  </metaInfo>
+  <colors>
+    <option name="CONSOLE_BACKGROUND_KEY" value="c952f3" />
+  </colors>
+  <attributes>
+    <option name="PY.DOC_COMMENT">
+      <value>
+        <option name="FOREGROUND" value="58217" />
+        <option name="FONT_TYPE" value="2" />
+      </value>
+    </option>
+    <option name="PY.FUNC_DEFINITION">
+      <value>
+        <option name="FOREGROUND" value="0" />
+        <option name="BACKGROUND" value="ffff" />
+        <option name="EFFECT_TYPE" value="1" />
+      </value>
+    </option>
+    <option name="PY.METHOD_CALL">
+      <value>
+        <option name="FOREGROUND" value="0" />
+        <option name="BACKGROUND" value="a7ffae" />
+        <option name="EFFECT_TYPE" value="2" />
+      </value>
+    </option>
+    <option name="PY.STRING.B">
+      <value>
+        <option name="FOREGROUND" value="f200d6" />
+        <option name="FONT_TYPE" value="1" />
+      </value>
+    </option>
+  </attributes>
+</scheme>

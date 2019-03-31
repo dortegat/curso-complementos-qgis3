@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QueryRasterFromPointDockWidgetBase</class>
+ <widget class="QDockWidget" name="QueryRasterFromPointDockWidgetBase">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>540</width>
+    <height>278</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Query raster from point vector layer</string>
+  </property>
+  <widget class="QWidget" name="dockWidgetContents">
+   <layout class="QGridLayout" name="gridLayout_4">
+    <item row="0" column="0">
+     <widget class="QGroupBox" name="groupBox_inputData">
+      <property name="title">
+       <string>Input data</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="0" column="0">
+        <layout class="QGridLayout" name="gridLayout" columnstretch="0,10,0">
+         <item row="0" column="2">
+          <widget class="QToolButton" name="toolButton_searchVectorLayer">
+           <property name="toolTip">
+            <string>Search vector layers</string>
+           </property>
+           <property name="text">
+            <string>...</string>
+           </property>
+           <property name="icon">
+            <iconset resource="resources.qrc">
+             <normaloff>:/plugins/query_raster_from_point/icons/grass_add_vector.png</normaloff>:/plugins/query_raster_from_point/icons/grass_add_vector.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>24</width>
+             <height>24</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QComboBox" name="comboBox_vectorLayer">
+           <property name="toolTip">
+            <string>Vector layers loaded in the QGIS Table Of Contents</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="label">
+           <property name="text">
+            <string>Vector layer:</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_2">
+           <property name="text">
+            <string>Raster layer:</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QComboBox" name="comboBox_rasterLayer">
+           <property name="toolTip">
+            <string>Raster layers loaded in the QGIS Table Of Contents</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="2">
+          <widget class="QToolButton" name="toolButton_searchRasterLayer">
+           <property name="toolTip">
+            <string>Search raster layers</string>
+           </property>
+           <property name="text">
+            <string>...</string>
+           </property>
+           <property name="icon">
+            <iconset resource="resources.qrc">
+             <normaloff>:/plugins/query_raster_from_point/icons/grass_add_raster.png</normaloff>:/plugins/query_raster_from_point/icons/grass_add_raster.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>24</width>
+             <height>24</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QGroupBox" name="groupBox_outputLayer">
+      <property name="title">
+       <string>Output layer</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="0" column="0">
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QRadioButton" name="radioButton_outputMemoryLayer">
+           <property name="text">
+            <string>Memory layer</string>
+           </property>
+           <property name="checked">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="checkBox_removePreviousProcessing">
+           <property name="text">
+            <string>Remove previous processings</string>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item row="1" column="0">
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <widget class="QRadioButton" name="radioButton_outputShapefile">
+           <property name="text">
+            <string>Shapefile</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_pathOutputShp"/>
+         </item>
+         <item>
+          <widget class="QToolButton" name="toolButton_searchPathOutputShp">
+           <property name="toolTip">
+            <string>Set path output shapefile</string>
+           </property>
+           <property name="text">
+            <string>...</string>
+           </property>
+           <property name="icon">
+            <iconset resource="resources.qrc">
+             <normaloff>:/plugins/query_raster_from_point/icons/fileexport.png</normaloff>:/plugins/query_raster_from_point/icons/fileexport.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>24</width>
+             <height>24</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QToolButton" name="toolButton_process">
+        <property name="toolTip">
+         <string>Process...</string>
+        </property>
+        <property name="text">
+         <string>...</string>
+        </property>
+        <property name="icon">
+         <iconset resource="resources.qrc">
+          <normaloff>:/plugins/query_raster_from_point/icons/processing.png</normaloff>:/plugins/query_raster_from_point/icons/processing.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>24</width>
+          <height>24</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>comboBox_vectorLayer</tabstop>
+  <tabstop>toolButton_searchVectorLayer</tabstop>
+  <tabstop>comboBox_rasterLayer</tabstop>
+  <tabstop>toolButton_searchRasterLayer</tabstop>
+  <tabstop>radioButton_outputMemoryLayer</tabstop>
+  <tabstop>radioButton_outputShapefile</tabstop>
+  <tabstop>lineEdit_pathOutputShp</tabstop>
+  <tabstop>toolButton_searchPathOutputShp</tabstop>
+  <tabstop>toolButton_process</tabstop>
+ </tabstops>
+ <connections>
+  <connection>
+   <sender>radioButton_outputShapefile</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>QueryRasterFromPointDockWidgetBase</receiver>
+   <slot>push_rb_shp()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>53</x>
+     <y>204</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>216</x>
+     <y>138</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_outputMemoryLayer</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>QueryRasterFromPointDockWidgetBase</receiver>
+   <slot>push_memory_layer()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>63</x>
+     <y>171</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>216</x>
+     <y>138</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>push_rb_shp()</slot>
+  <slot>push_memory_layer()</slot>
+ </slots>
+</ui>
